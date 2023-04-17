@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Chivo+Mono&family=Montserrat&family=Patrick+Hand&family=Roboto:ital,wght@0,400;0,700;1,400&family=Sono&family=Space+Mono&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, #30DDCE, #30DDCC);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+    /* This removes the horizontal scroll bar */
+}
+
+h1 {
+    color: #2A325B;
+    margin: 10px;
+}
+
+.box {
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-color: #FFF85F;
+    color: #2A325B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 12.5rem;
+    margin: 0.625rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    transform: translateX(200%);
+    /*Set to 400% or it will show on wide screens*/
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-200%);
+    /* For the even number boxes stay on the left side of the screen.
+    Set to -400% or it will show on wide screens*/
+}
+
+.box.show{
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 2em;
+    /* position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0; */
+}
